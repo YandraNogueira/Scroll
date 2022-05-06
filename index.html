@@ -87,6 +87,8 @@ a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	text-decoration: none;
 }
 hr{
 	border: 2px solid #82589F;
@@ -97,14 +99,14 @@ hr{
 	text-align: justify;
 }
 .cesar1{
-	margin-top: 40px;
+	margin-top: 30px;
 	text-align: justify;
 }
 button{
 	
-  display: inline-block;
+  display: flex;
   padding: 10px 15px;
-  font-size: 20px;
+  font-size: 19px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -124,14 +126,16 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-	</style>
+.botao{
+	margin-bottom: 30%;
+}
+</style>
 
 </head>
 <body>
 	<header>
 		<div class="menu">
-		<div class="logo"> <img src="img/img01.png"> </div>
+		<div class="logo"> <img src="img01.png"> </div>
 		<nav>
 			<div> <a href="#page-1"> <button><strong>Seção 01</strong></button> </a> </div>|
 			<div> <a href="#page-2"> <button><strong>Seção 02</strong></button> </a> </div>|
@@ -152,9 +156,10 @@ button:active {
 			</div>
 			&nbsp; &nbsp; &nbsp;
 			<hr>
-           &nbsp; &nbsp; &nbsp; &nbsp; <a href="#page-1"><strong>Seção 01</strong></a> &nbsp; &nbsp; &nbsp;
+           &nbsp; &nbsp; &nbsp; &nbsp; <a href="#page-1">
+           	<button><strong>Seção 01</strong></button></a> &nbsp; &nbsp; &nbsp;
 		</div>
-		<br> 
+
 
 		<div class="ordem" id="page-2">
 			<img src="https://uploads.spiritfanfiction.com/historias/capas/202107/cesar-cohen-22622561-070720211427.jpg" id="img03">  
@@ -167,7 +172,8 @@ button:active {
 			</div>
 			&nbsp; &nbsp; &nbsp;
 			<hr>
-           &nbsp; &nbsp; &nbsp; &nbsp; <a href="#page-2"><strong>Seção 02</strong></a> &nbsp; &nbsp; &nbsp;
+           &nbsp; &nbsp; &nbsp; &nbsp; <a href="#page-2">
+           	<button><strong>Seção 02</strong></button></a> &nbsp; &nbsp; &nbsp;
 		</div>
 		
 
@@ -186,11 +192,14 @@ button:active {
 			</div>
 			&nbsp; &nbsp; &nbsp;
 			<hr>
-           &nbsp; &nbsp; &nbsp; &nbsp; <a href="#page-3"><strong>Seção 03</strong></a> &nbsp; &nbsp; &nbsp;
+           &nbsp; &nbsp; &nbsp; &nbsp; <a href="#page-3">
+           	<button><strong>Seção 03</strong></button></a> &nbsp; &nbsp; &nbsp;
 		</div>
-		<a id="topo" href="#top">
-			<button class="botao">Home</button>
-		</a>
+		<footer>
+			<a id="topo" href="#top">
+				<button class="botao">Home</button>
+			</a>
+		</footer>
 	</scroll-container>
 </body>
 </html>
